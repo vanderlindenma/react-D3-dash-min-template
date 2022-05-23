@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+
+import './bulma.min.css';
+import { Box, Columns, Level } from 'react-bulma-components';
 import './App.css';
 
-function App() {
+import Sidebar from 'Components/Sidebar/Sidebar' // Absolute path import from src allowed through jsconfig.json in root (https://create-react-app.dev/docs/importing-a-component/, https://stackoverflow.com/questions/45213279/how-to-avoid-using-relative-path-imports-redux-action-action1-in-cre)
+import Viz from 'Components/Viz/Viz'
+import Navbar from 'Components/Navbar/Navbar'
+
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Columns>
+        <Columns.Column size={3}>
+            <Box>
+            <Sidebar/>
+            </Box>
+        </Columns.Column>
+        <Columns.Column size={9}>
+            <Box>
+               <Navbar/>
+            </Box>
+            <Box>
+                <Level>
+                    <Viz/>
+                </Level>
+            </Box>
+        </Columns.Column>
+      </Columns>
   );
 }
 
