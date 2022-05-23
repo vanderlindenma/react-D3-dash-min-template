@@ -6,7 +6,6 @@ import { useAtom } from 'jotai'
 const TFCheckbox = () => {
 
     const [contState, setcontState] = useAtom(exampleControlState)
-    console.log(contState)
 
     return( 
         <Checkbox

@@ -1,7 +1,6 @@
 import * as d3 from 'd3';
 
 const Draw = (refcur) => {
-    console.log("DRAWING!")
 
     let svg = d3.select(refcur)
                 .append('svg')
