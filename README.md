@@ -13,7 +13,7 @@ Some of the template's specs:
 - *"Pure" D3*:  Raw `d3` library as opposed to premade `d3` components from the `react-d3` library.
 - *Connecting React and D3*: Approach based on the `useEffect` and `UseRef` hooks from `React` (https://medium.com/@jeffbutsch/using-d3-in-react-with-hooks-4a6c61f1d102).
 - *Draw/Update setup*: Sets up Draw/Update framework with initial viz is rendered through `Draw` function and `svg` elements thereby created are later modified through `Update` function (allows for `d3` transition and animated updates).
-- *Jotai state-management*: Global state variables (e.g., state of checkbox control) gathered in single store. Accessibility throughout the app powered by Jotai (https://github.com/pmndrs/jotai/discussions/1003).
+- *Jotai state-management*: Global state-variables gathered in single store. Accessibility throughout the app powered by Jotai (https://github.com/pmndrs/jotai/discussions/1003). Jotai state-variables used for interaction between controls and visualization (as opposed to using props, to avoid props-drilling).
 - *Bulma Layout*: Dashboard layout uses https://react-bulma.dev/en.
 - *Absolute path import*: Absolute path import from `src` enabled through `jsconfig.json` in root (https://create-react-app.dev/docs/importing-a-component/, https://stackoverflow.com/questions/45213279/how-to-avoid-using-relative-path-imports-redux-action-action1-in-cre)
 - *Material UI example control*: Example of checkbox control using https://mui.com/ and interacting with `d3` update.
