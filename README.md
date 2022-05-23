@@ -9,7 +9,7 @@ Standard installation, booting, and deployment instructions at the end of this R
 
 This project consists of a somewhat minimal template for a React-D3 dashboard.
 
-[!snapshot.png]
+![alt text](snapshot.png)
 
 Some of the template's specs:
 
