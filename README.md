@@ -8,6 +8,9 @@ Standard installation, booting, and deployment instructions at the end of this R
 ## Description
 
 This project consists of a somewhat minimal template for a React-D3 dashboard.
+
+[!snapshot.png]
+
 Some of the template's specs:
 
 - *"Pure" D3*: Connection between `React` and "raw" `d3` library as opposed to premade `d3` components from the `react-d3` library.
