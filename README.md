@@ -3,7 +3,7 @@
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
-Standard installation, booting, and deployment instructions at the end of this Readme.
+Standard installation, booting, and deployment instructions are at the end of this Readme.
 
 ## Description
 
