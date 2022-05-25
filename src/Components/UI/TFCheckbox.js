@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 import Checkbox from '@mui/material/Checkbox';
-import { exampleControlState } from 'jotaiStore.js';
 import { useAtom } from 'jotai'
 
-const TFCheckbox = () => {
+function TFCheckbox(props) {
 
-    const [contState, setcontState] = useAtom(exampleControlState)
+    const [contState, setcontState] = useAtom(props.atom)
 
     return( 
         <Checkbox
